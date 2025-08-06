@@ -1,0 +1,1376 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "subpanel_MFR": {
+      "type": "object",
+      "properties": {
+        "model_id": {
+          "type": "integer"
+        },
+        "length": {
+          "type": "integer"
+        },
+        "Mn": {
+          "type": "string"
+        },
+        "Md": {
+          "type": "string"
+        },
+        "Opt": {
+          "type": "string"
+        },
+        "Vr": {
+          "type": "string"
+        },
+        "SN": {
+          "type": "string"
+        },
+        "DA": {
+          "type": "string"
+        },
+        "ALARMS": {
+          "type": "string"
+        },
+        "timestamp": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "model_id",
+        "length",
+        "Mn",
+        "Md",
+        "Opt",
+        "Vr",
+        "SN",
+        "DA",
+        "ALARMS",
+        "timestamp"
+      ]
+    },
+    "subpanel_ENV": {
+      "type": "object",
+      "properties": {
+        "model_id": {
+          "type": "integer"
+        },
+        "length": {
+          "type": "integer"
+        },
+        "temperature_C": {
+          "type": "integer"
+        },
+        "humidity_percent": {
+          "type": "integer"
+        },
+        "door_open": {
+          "type": "boolean"
+        },
+        "timestamp_ms": {
+          "type": "integer"
+        },
+        "last_modbus_update_ms": {
+          "type": "integer"
+        },
+        "last_gpio_update_ms": {
+          "type": "integer"
+        },
+        "door_open_duration_ms": {
+          "type": "integer"
+        },
+        "timestamp": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "model_id",
+        "length",
+        "temperature_C",
+        "humidity_percent",
+        "door_open",
+        "timestamp_ms",
+        "last_modbus_update_ms",
+        "last_gpio_update_ms",
+        "door_open_duration_ms",
+        "timestamp"
+      ]
+    },
+    "subpanel_3Ph": {
+      "type": "object",
+      "properties": {
+        "model_id": {
+          "type": "integer"
+        },
+        "length": {
+          "type": "integer"
+        },
+        "Hz": {
+          "type": "number"
+        },
+        "AphA": {
+          "type": "integer"
+        },
+        "AphB": {
+          "type": "integer"
+        },
+        "AphC": {
+          "type": "integer"
+        },
+        "PhVphA": {
+          "type": "number"
+        },
+        "PhVphB": {
+          "type": "integer"
+        },
+        "PhVphC": {
+          "type": "integer"
+        },
+        "PFphA": {
+          "type": "integer"
+        },
+        "PFphB": {
+          "type": "integer"
+        },
+        "PFphC": {
+          "type": "integer"
+        },
+        "VarphA": {
+          "type": "integer"
+        },
+        "VarphB": {
+          "type": "integer"
+        },
+        "VarphC": {
+          "type": "integer"
+        },
+        "VAphA": {
+          "type": "integer"
+        },
+        "VAphB": {
+          "type": "integer"
+        },
+        "VAphC": {
+          "type": "integer"
+        },
+        "WphA": {
+          "type": "integer"
+        },
+        "WphB": {
+          "type": "integer"
+        },
+        "WphC": {
+          "type": "integer"
+        },
+        "THD_VphA": {
+          "type": "integer"
+        },
+        "THD_VphB": {
+          "type": "integer"
+        },
+        "THD_VphC": {
+          "type": "integer"
+        },
+        "THD_IphA": {
+          "type": "integer"
+        },
+        "THD_IphB": {
+          "type": "integer"
+        },
+        "THD_IphC": {
+          "type": "integer"
+        },
+        "Harmonics_VphA": {
+          "type": "array",
+          "items": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            }
+          ]
+        },
+        "Harmonics_VphB": {
+          "type": "array",
+          "items": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            }
+          ]
+        },
+        "Harmonics_VphC": {
+          "type": "array",
+          "items": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            }
+          ]
+        },
+        "Harmonics_IphA": {
+          "type": "array",
+          "items": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            }
+          ]
+        },
+        "Harmonics_IphB": {
+          "type": "array",
+          "items": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            }
+          ]
+        },
+        "Harmonics_IphC": {
+          "type": "array",
+          "items": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            }
+          ]
+        },
+        "TotHrWhImport": {
+          "type": "integer"
+        },
+        "TotHrWhExport": {
+          "type": "integer"
+        },
+        "TotTOUCWhImport": {
+          "type": "integer"
+        },
+        "TotTOUCWhExport": {
+          "type": "integer"
+        },
+        "TotDayImport": {
+          "type": "integer"
+        },
+        "TotDayExport": {
+          "type": "integer"
+        },
+        "TotWhImport": {
+          "type": "integer"
+        },
+        "TotWhExport": {
+          "type": "integer"
+        },
+        "timestamp": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "model_id",
+        "length",
+        "Hz",
+        "AphA",
+        "AphB",
+        "AphC",
+        "PhVphA",
+        "PhVphB",
+        "PhVphC",
+        "PFphA",
+        "PFphB",
+        "PFphC",
+        "VarphA",
+        "VarphB",
+        "VarphC",
+        "VAphA",
+        "VAphB",
+        "VAphC",
+        "WphA",
+        "WphB",
+        "WphC",
+        "THD_VphA",
+        "THD_VphB",
+        "THD_VphC",
+        "THD_IphA",
+        "THD_IphB",
+        "THD_IphC",
+        "Harmonics_VphA",
+        "Harmonics_VphB",
+        "Harmonics_VphC",
+        "Harmonics_IphA",
+        "Harmonics_IphB",
+        "Harmonics_IphC",
+        "TotHrWhImport",
+        "TotHrWhExport",
+        "TotTOUCWhImport",
+        "TotTOUCWhExport",
+        "TotDayImport",
+        "TotDayExport",
+        "TotWhImport",
+        "TotWhExport",
+        "timestamp"
+      ]
+    },
+    "subpanel_RCMleaks": {
+      "type": "object",
+      "properties": {
+        "model_id": {
+          "type": "integer"
+        },
+        "length": {
+          "type": "integer"
+        },
+        "lastUpdateMs": {
+          "type": "integer"
+        },
+        "acSinusoidal": {
+          "type": "object",
+          "properties": {
+            "value_mA": {
+              "type": "integer"
+            },
+            "threshold_mA": {
+              "type": "integer"
+            },
+            "lastFaultValue_mA": {
+              "type": "integer"
+            },
+            "lastFaultTimeMs": {
+              "type": "integer"
+            },
+            "inFault": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "value_mA",
+            "threshold_mA",
+            "lastFaultValue_mA",
+            "lastFaultTimeMs",
+            "inFault"
+          ]
+        },
+        "acPulsating": {
+          "type": "object",
+          "properties": {
+            "value_mA": {
+              "type": "integer"
+            },
+            "threshold_mA": {
+              "type": "integer"
+            },
+            "lastFaultValue_mA": {
+              "type": "integer"
+            },
+            "lastFaultTimeMs": {
+              "type": "integer"
+            },
+            "inFault": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "value_mA",
+            "threshold_mA",
+            "lastFaultValue_mA",
+            "lastFaultTimeMs",
+            "inFault"
+          ]
+        },
+        "dc": {
+          "type": "object",
+          "properties": {
+            "value_mA": {
+              "type": "integer"
+            },
+            "threshold_mA": {
+              "type": "integer"
+            },
+            "lastFaultValue_mA": {
+              "type": "integer"
+            },
+            "lastFaultTimeMs": {
+              "type": "integer"
+            },
+            "inFault": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "value_mA",
+            "threshold_mA",
+            "lastFaultValue_mA",
+            "lastFaultTimeMs",
+            "inFault"
+          ]
+        },
+        "timestamp": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "model_id",
+        "length",
+        "lastUpdateMs",
+        "acSinusoidal",
+        "acPulsating",
+        "dc",
+        "timestamp"
+      ]
+    },
+    "subpanel_harmonics": {
+      "type": "object",
+      "properties": {
+        "model_id": {
+          "type": "integer"
+        },
+        "length": {
+          "type": "integer"
+        },
+        "Harmonics_VphA": {
+          "type": "array",
+          "items": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            }
+          ]
+        },
+        "Harmonics_VphB": {
+          "type": "array",
+          "items": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            }
+          ]
+        },
+        "Harmonics_VphC": {
+          "type": "array",
+          "items": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            }
+          ]
+        },
+        "Harmonics_IphA": {
+          "type": "array",
+          "items": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            }
+          ]
+        },
+        "Harmonics_IphB": {
+          "type": "array",
+          "items": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            }
+          ]
+        },
+        "Harmonics_IphC": {
+          "type": "array",
+          "items": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            }
+          ]
+        },
+        "timestamp": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "model_id",
+        "length",
+        "Harmonics_VphA",
+        "Harmonics_VphB",
+        "Harmonics_VphC",
+        "Harmonics_IphA",
+        "Harmonics_IphB",
+        "Harmonics_IphC",
+        "timestamp"
+      ]
+    },
+    "meters": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "model_id": {
+              "type": "integer"
+            },
+            "length": {
+              "type": "integer"
+            },
+            "Phase": {
+              "type": "integer"
+            },
+            "Hz": {
+              "type": "number"
+            },
+            "PhA": {
+              "type": "integer"
+            },
+            "PhV": {
+              "type": "number"
+            },
+            "PhW": {
+              "type": "integer"
+            },
+            "VA": {
+              "type": "integer"
+            },
+            "Var": {
+              "type": "integer"
+            },
+            "PF": {
+              "type": "integer"
+            },
+            "TotWhImport": {
+              "type": "integer"
+            },
+            "TotWhExport": {
+              "type": "integer"
+            },
+            "TotVarhImport": {
+              "type": "integer"
+            },
+            "TotVarhExport": {
+              "type": "integer"
+            },
+            "TotAh": {
+              "type": "integer"
+            },
+            "Tot15mWhImport": {
+              "type": "integer"
+            },
+            "Tot15mWhExport": {
+              "type": "integer"
+            },
+            "TotHrWhImport": {
+              "type": "integer"
+            },
+            "TotHrWhExport": {
+              "type": "integer"
+            },
+            "TotDayWhImport": {
+              "type": "integer"
+            },
+            "TotDayWhExport": {
+              "type": "integer"
+            },
+            "THD_A": {
+              "type": "integer"
+            },
+            "THD_V": {
+              "type": "integer"
+            },
+            "timestamp": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "model_id",
+            "length",
+            "Phase",
+            "Hz",
+            "PhA",
+            "PhV",
+            "PhW",
+            "VA",
+            "Var",
+            "PF",
+            "TotWhImport",
+            "TotWhExport",
+            "TotVarhImport",
+            "TotVarhExport",
+            "TotAh",
+            "Tot15mWhImport",
+            "Tot15mWhExport",
+            "TotHrWhImport",
+            "TotHrWhExport",
+            "TotDayWhImport",
+            "TotDayWhExport",
+            "THD_A",
+            "THD_V",
+            "timestamp"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "model_id": {
+              "type": "integer"
+            },
+            "length": {
+              "type": "integer"
+            },
+            "Phase": {
+              "type": "integer"
+            },
+            "Hz": {
+              "type": "integer"
+            },
+            "PhA": {
+              "type": "integer"
+            },
+            "PhV": {
+              "type": "integer"
+            },
+            "PhW": {
+              "type": "integer"
+            },
+            "VA": {
+              "type": "integer"
+            },
+            "Var": {
+              "type": "integer"
+            },
+            "PF": {
+              "type": "integer"
+            },
+            "TotWhImport": {
+              "type": "integer"
+            },
+            "TotWhExport": {
+              "type": "integer"
+            },
+            "TotVarhImport": {
+              "type": "integer"
+            },
+            "TotVarhExport": {
+              "type": "integer"
+            },
+            "TotAh": {
+              "type": "integer"
+            },
+            "Tot15mWhImport": {
+              "type": "integer"
+            },
+            "Tot15mWhExport": {
+              "type": "integer"
+            },
+            "TotHrWhImport": {
+              "type": "integer"
+            },
+            "TotHrWhExport": {
+              "type": "integer"
+            },
+            "TotDayWhImport": {
+              "type": "integer"
+            },
+            "TotDayWhExport": {
+              "type": "integer"
+            },
+            "THD_A": {
+              "type": "integer"
+            },
+            "THD_V": {
+              "type": "integer"
+            },
+            "timestamp": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "model_id",
+            "length",
+            "Phase",
+            "Hz",
+            "PhA",
+            "PhV",
+            "PhW",
+            "VA",
+            "Var",
+            "PF",
+            "TotWhImport",
+            "TotWhExport",
+            "TotVarhImport",
+            "TotVarhExport",
+            "TotAh",
+            "Tot15mWhImport",
+            "Tot15mWhExport",
+            "TotHrWhImport",
+            "TotHrWhExport",
+            "TotDayWhImport",
+            "TotDayWhExport",
+            "THD_A",
+            "THD_V",
+            "timestamp"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "model_id": {
+              "type": "integer"
+            },
+            "length": {
+              "type": "integer"
+            },
+            "Phase": {
+              "type": "integer"
+            },
+            "Hz": {
+              "type": "number"
+            },
+            "PhA": {
+              "type": "integer"
+            },
+            "PhV": {
+              "type": "integer"
+            },
+            "PhW": {
+              "type": "integer"
+            },
+            "VA": {
+              "type": "integer"
+            },
+            "Var": {
+              "type": "integer"
+            },
+            "PF": {
+              "type": "integer"
+            },
+            "TotWhImport": {
+              "type": "integer"
+            },
+            "TotWhExport": {
+              "type": "integer"
+            },
+            "TotVarhImport": {
+              "type": "integer"
+            },
+            "TotVarhExport": {
+              "type": "integer"
+            },
+            "TotAh": {
+              "type": "integer"
+            },
+            "Tot15mWhImport": {
+              "type": "integer"
+            },
+            "Tot15mWhExport": {
+              "type": "integer"
+            },
+            "TotHrWhImport": {
+              "type": "integer"
+            },
+            "TotHrWhExport": {
+              "type": "integer"
+            },
+            "TotDayWhImport": {
+              "type": "integer"
+            },
+            "TotDayWhExport": {
+              "type": "integer"
+            },
+            "THD_A": {
+              "type": "integer"
+            },
+            "THD_V": {
+              "type": "integer"
+            },
+            "timestamp": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "model_id",
+            "length",
+            "Phase",
+            "Hz",
+            "PhA",
+            "PhV",
+            "PhW",
+            "VA",
+            "Var",
+            "PF",
+            "TotWhImport",
+            "TotWhExport",
+            "TotVarhImport",
+            "TotVarhExport",
+            "TotAh",
+            "Tot15mWhImport",
+            "Tot15mWhExport",
+            "TotHrWhImport",
+            "TotHrWhExport",
+            "TotDayWhImport",
+            "TotDayWhExport",
+            "THD_A",
+            "THD_V",
+            "timestamp"
+          ]
+        }
+      ]
+    },
+    "subpanel_BWPubOut": {
+      "type": "object",
+      "properties": {
+        "interval_ms": {
+          "type": "integer"
+        },
+        "pubout_count": {
+          "type": "integer"
+        },
+        "payload_bytes": {
+          "type": "integer"
+        },
+        "tcpip_bytes": {
+          "type": "integer"
+        },
+        "avg_bps_out": {
+          "type": "integer"
+        },
+        "timestamp": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "interval_ms",
+        "pubout_count",
+        "payload_bytes",
+        "tcpip_bytes",
+        "avg_bps_out",
+        "timestamp"
+      ]
+    },
+    "subpanel_BWCmdIn": {
+      "type": "object",
+      "properties": {
+        "interval_ms": {
+          "type": "integer"
+        },
+        "cmdin_count": {
+          "type": "integer"
+        },
+        "payload_bytes": {
+          "type": "integer"
+        },
+        "tcpip_bytes": {
+          "type": "integer"
+        },
+        "avg_bps_in": {
+          "type": "integer"
+        },
+        "timestamp": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "interval_ms",
+        "cmdin_count",
+        "payload_bytes",
+        "tcpip_bytes",
+        "avg_bps_in",
+        "timestamp"
+      ]
+    }
+  },
+  "required": [
+    "subpanel_MFR",
+    "subpanel_ENV",
+    "subpanel_3Ph",
+    "subpanel_RCMleaks",
+    "subpanel_harmonics",
+    "meters",
+    "subpanel_BWPubOut",
+    "subpanel_BWCmdIn"
+  ]
+}
+ 
